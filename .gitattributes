@@ -1,0 +1,14 @@
+# Normalise text files to LF inside the repository, check out platform-native.
+* text=auto
+
+# Toolpath sources and scripts are plain text.
+*.gcode text
+*.py    text
+*.md    text
+*.cff   text
+
+# Meshes and machine binaries must never be end-of-line converted.
+*.stl    binary
+*.3mf    binary
+*.bgcode binary
+*.prt    binary

@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "ccf-nonplanar-slicer: non-planar G-code generation for continuous carbon fiber and matrix"
+message: "If you use this software in your research, please cite it as below."
+type: software
+authors:
+  - given-names: Arash
+    family-names: Afshari
+    affiliation: "Institute of Mechanical Engineering"
+repository-code: "https://github.com/ArashAfshari/ccf-nonplanar-slicer"
+license: MIT
+version: "1.0.0"
+date-released: "2026-09-23"
+keywords:
+  - additive manufacturing
+  - non-planar 3D printing
+  - continuous carbon fiber
+  - composite
+  - G-code
+  - Anisoprint
+
+# ---------------------------------------------------------------------------
+# TODO: fill in once the accompanying publication is available, then delete
+# this comment. Remove the whole "preferred-citation" block if there is no
+# accompanying paper.
+# ---------------------------------------------------------------------------
+preferred-citation:
+  type: article
+  title: "TODO: paper title"
+  authors:
+    - given-names: Arash
+      family-names: Afshari
+      affiliation: "Institute of Mechanical Engineering"
+  journal: "TODO: journal or conference"
+  year: 2026
+  doi: "TODO: 10.xxxx/xxxxx"
