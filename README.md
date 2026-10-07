@@ -1,20 +1,16 @@
 # ccf-nonplanar-slicer
 
 Non-planar G-code generation for continuous carbon fiber (CCF) and thermoplastic
-matrix on an [Anisoprint](https://anisoprint.com/) composite printer.
+matrix on [Anisoprint](https://anisoprint.com/) A3 composite printer.
 
 The toolchain starts from a curved, non-planar toolpath exported as pure motion
 G-code from Siemens NX, splits it into fiber and polymer regions, converts each
 region into Anisoprint extrusion commands, and assembles the result into a
-complete multilayer printer job — optionally preceded by a PETG support
-structure sliced in PrusaSlicer, and optionally replicated across the bed.
+complete multilayer printer job combined with support structure.
 
-Ten scripts, run in order. Pure Python standard library, no dependencies.
-
-> **Safety.** The output drives a real printer with a composite nozzle and a
+> **Safety.** The output drives the 3D printer with a composite nozzle and a
 > fiber cutter. Always preview the generated G-code and check nozzle and
-> carriage clearance before printing. The built-in bounds and overlap checks
-> concern commanded coordinates, not the physical size of the carriage.
+> carriage clearance before printing.
 
 ---
 
@@ -48,11 +44,9 @@ makes the result correct on non-planar paths where `dz` is not zero.
 
 ## Requirements
 
-- **Python 3.10 or newer.** No third-party packages.
-- Siemens NX (or any source producing absolute, millimetre, motion-only G-code)
-  for the non-planar toolpath.
-- PrusaSlicer, only if you want the PETG support in steps 08–09.
-- 
+- **Python 3.10 or newer.**
+- motion gcode for each material
+- support gcode
 ---
 
 ## Author
