@@ -49,10 +49,6 @@ makes the result correct on non-planar paths where `dz` is not zero.
 - support gcode
 ---
 
-## Author
-
-**Arash Afshari** — Institute of Mechanical Engineering
-
 ## Citation
 
 If you use this software in your research, please cite it. See
